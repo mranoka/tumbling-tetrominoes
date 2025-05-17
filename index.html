@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="Libraries/app.js" charset="utf-8"></script>
+    <script src="Scripts/app.js" charset="utf-8"></script>
     <script src="Styles/bootstrap/js/bootstrap.bundle.js" charset="utf-8"></script>
     <link rel="stylesheet" href="Styles/style.css"></link>
     <link rel="stylesheet" href="Styles/bootstrap/css/bootstrap.css"></link>
@@ -15,8 +15,7 @@
         <h5 id="game-title"><strong>NEXT TETROMINO:</strong> </h5>
       </div>
       <div class="row">
-        <div class="col-7 left-pane">
-          <div class="grid-container">
+        <div class="col-6 left-pane  grid-container">
             <div class="main-grid">
               <div></div>
               <div></div>
@@ -228,7 +227,6 @@
               <div class="taken"></div>
               <div class="taken"></div>
               <div class="taken"></div>
-            </div>
           </div>
         </div>
         <div class="col-3 right-pane">
@@ -254,16 +252,16 @@
             <h3 id="scoring">Score:<span id="score">0</span></h3>
           </div>
           <div class="row">
-            <button id="start-button"><strong>Start/Pause</strong></button>
-            <button id="mute-button"><strong>Unmute/Mute</strong></button>
+            <button id="start-button" class="btn btn-success"><strong>Start/Pause</strong></button>
+            <button id="mute-button" class="btn btn-info"><strong>Unmute/Mute</strong></button>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-3"><button class="btn btn-primary">fdjkfj</button></div>
-        <div class="col-3"><button class="btn btn-primary"></button></div>
-        <div class="col-3"><button class="btn btn-primary"></button></div>
-        <div class="col-3"><button class="btn btn-primary"></button></div>
+        <div class="col-7"><button class="btn btn-info left-arrow"><img width="30px" height="30px" src="Images/Icons/arrow_right.svg" /></button>
+        <button class="btn btn-info right-arrow"><img width="30px" height="30px" src="Images/Icons/arrow_left.svg" /></button></div>
+        <div class="col-2"><button class="btn btn-info"><img width="30px" height="30px" src="Images/Icons/arrow_rotate.svg" /></button></div>
+        <div class="col-2"><button class="btn btn-info"><img width="30px" height="30px" src="Images/Icons/arrow_down.svg" /></button></div>
       </div>
     </div>
 
@@ -272,8 +270,5 @@
       <source src="https://d1490khl9dq1ow.cloudfront.net/audio/music/mp3preview/BsTwCwBHBjzwub4i4/sw-1117-happy-and-inspiring-28_NWM.mp3"
       type="audio/mpeg">
     </audio>
-    <footer>
-      <p id='autor'>Mahamo Ranoka</p>
-    </footer>
   </body>
 </html>

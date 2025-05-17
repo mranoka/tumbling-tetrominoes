@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
-  let squares = Array.from(document.querySelectorAll('.grid div'))
+  var squares = Array.from(document.querySelectorAll('.main-grid div'))
+  console.log(squares)
   const scoreDisplay = document.querySelector('#score')
   const startBtn = document.querySelector('#start-button')
   const muteBtn = document.getElementById('mute-button')
@@ -104,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
             level += 8
         }
   }
-console.log(addScore())
   // freeze function
   function freeze () {
     if (current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
